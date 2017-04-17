@@ -84,5 +84,5 @@ using the issue tracker.
 ## Contact
 
 For more enquiries and technical questions regarding this sample, please post
-on our issue tracker: https://github.com/ibrahimlawal/BarePaystackJS/issues.
+on our issue tracker: https://github.com/PaystackHQ/PaystackJS-Sample-code/issues.
 
