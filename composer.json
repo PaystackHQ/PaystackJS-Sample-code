@@ -1,0 +1,5 @@
+{
+    "require": {
+        "yabacon/paystack-php": "^2.1"
+    }
+}
