@@ -64,7 +64,7 @@ function startPaystack(access_code){
         $("#otp-message").html(response.message);
         $("#otp-form").submit(function(e){
             startProcessing(e);
-            PAYSTACK.card.validate({
+            PAYSTACK.card.validateToken({
                 token: fetchValueWhileClearingField('otp')
             }).then(handleResponse, handleError);
         });
@@ -80,12 +80,12 @@ function startPaystack(access_code){
         });
     }
 
-    function startEnrollAuth(response){
-        $("#enroll-form").show();
-        $("#enroll-message").html(response.message);
-        $("#enroll-form").submit(function(e){
+    function startPhoneAuth(response){
+        $("#phone-form").show();
+        $("#phone-message").html(response.message);
+        $("#phone-form").submit(function(e){
             startProcessing(e);
-            PAYSTACK.card.enroll({
+            PAYSTACK.card.validatePhone({
                 phone: fetchValueWhileClearingField('phone')
             }).then(handleResponse, handleError);
         });
@@ -119,7 +119,7 @@ function startPaystack(access_code){
                         startPinAuth(response);
                         break;
                     case 'phone':
-                        startEnrollAuth(response);
+                        startPhoneAuth(response);
                         break;
                     case 'otp':
                         startOtpAuth(response);

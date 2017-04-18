@@ -9,6 +9,7 @@ CONTENTS OF THIS FILE
  * Installation
  * Configuration
  * Run
+ * Test Verve card
  * Security
  
 ## Introduction
@@ -76,6 +77,16 @@ Edit [index.php](index.php) providing your secret key.
 
 To run the sample, navigate to the folder where you unzipped the sample.
 
+## Test Verve card
+
+Here is a test Verve card you can use with a test secret key:
+
+- Card PAN: `5066666666666666666`
+- Card CVC: `666`
+- Expiry Date: any future date
+- PIN: `1234`
+- OTP: `123456`
+
 ## Security
 
 If you discover any security related issues, please email support@paystack.com instead of
@@ -84,5 +95,5 @@ using the issue tracker.
 ## Contact
 
 For more enquiries and technical questions regarding this sample, please post
-on our issue tracker: https://github.com/PaystackHQ/PaystackJS-Sample-code/issues.
+on our issue tracker: https://github.com/ibrahimlawal/BarePaystackJS/issues.
 
