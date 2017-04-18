@@ -82,7 +82,7 @@ To run the sample, navigate to the folder where you unzipped the sample.
 Here is a test Verve card you can use with a test secret key:
 
 - Card PAN: `5066666666666666666`
-- Card CVC: `666`
+- Card CVC: `123`
 - Expiry Date: any future date
 - PIN: `1234`
 - OTP: `123456`
