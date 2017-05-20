@@ -27,6 +27,7 @@ if($path === 'new-access-code'){
 
     try{
         $paystack = new Paystack(PAYSTACK_SECRET);
+        $paystack->disableFileGetContentsFallback();
         $trx = $paystack->transaction->initialize([
             'amount'=>$amountinkobo,
             'email'=>$email,
@@ -49,6 +50,7 @@ if(strpos($path, 'verify/') === 0){
 
     try{
         $paystack = new Paystack(PAYSTACK_SECRET);
+        $paystack->disableFileGetContentsFallback();
         $trx = $paystack->transaction->verify([
             'reference'=>$reference,
         ]);
